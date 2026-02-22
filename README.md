@@ -2,8 +2,8 @@
 
 ## 1. Clone AKI LLM model
 
-​	git clone https://github.com/Dr-zouxiaoqin/AKI_LLM.git
-​	git branch -M main
+​	1）git clone https://github.com/Dr-zouxiaoqin/AKI_LLM.git
+​	2）git branch -M main
 
 ## 2. AKI model training 
 
