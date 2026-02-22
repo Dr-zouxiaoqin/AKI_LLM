@@ -5,7 +5,14 @@
 ​	1）git clone https://github.com/Dr-zouxiaoqin/AKI_LLM.git
 ​	2）git branch -M main
 
-## 2. AKI model training 
+## 2.Download Llama-2-7b-hf  as base model:
+
+1) URL:https://www.modelscope.cn/models/shakechen/Llama-2-7b-hf
+2) pip install modelscope
+
+3. modelscope download --model shakechen/Llama-2-7b-hf
+
+## 3. AKI model training 
 
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
@@ -19,7 +26,7 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 
 torchrun --nproc_per_node=4  --master_port=30002 llama_qlora_AKI_distributed_model.py >llama_qlora_AKI_distributed_model.log 2>&1 &
 
-## 3. AKI model inference
+## 4. AKI model inference
 
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
