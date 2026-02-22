@@ -1,0 +1,10 @@
+{
+  "total_false_positives": 4082,
+  "avg_probability": 0.6637282240980691,
+  "high_risk_count": 0,
+  "common_patterns": {
+    "mild_creat_increase": 1257,
+    "low_uo_normal_creat": 4082,
+    "hypotension_only": 0
+  }
+}
